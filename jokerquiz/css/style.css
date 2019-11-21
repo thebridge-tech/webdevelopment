@@ -1,0 +1,92 @@
+body {
+  text-align: center;
+  font-family: arial;
+}
+
+button {
+  margin-top: 20px;
+  padding: 20px;
+  text-align: center;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  background-color: #550A55;
+  border: none;
+}
+
+#start {
+  display: flex;
+}
+
+#game, #end {
+  display: none;
+}
+
+#start, #game, #end {
+  flex-direction: column;
+  width: 50%;
+  margin: 0 auto;
+}
+
+#game h2 {
+  height: 80px;
+}
+
+#game img {
+  height: 300px;
+}
+
+#end ul {
+  text-align: left;
+}
+
+.answers {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.answer {
+  flex-basis: 50%;
+  flex-shrink: 0;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  font-weight: bold;
+}
+
+.redBtn {
+  background-color: rgba(226, 27, 60, 0.35);
+}
+
+.redBtn.selected {
+  background-color: #e21b3c;
+}
+
+.yellowBtn {
+  background-color: rgba(255, 166, 2, 0.35);
+}
+
+.yellowBtn.selected {
+  background-color: #ffa602;
+}
+
+.blueBtn {
+  background-color: rgba(19, 104, 206, 0.35);
+}
+
+.blueBtn.selected {
+  background-color: #1368ce;
+}
+
+.greenBtn {
+  background-color: rgba(38, 137, 12, 0.35);
+}
+
+.greenBtn.selected {
+  background-color: #26890c;
+}
+
+.selected {
+  color: white;
+}

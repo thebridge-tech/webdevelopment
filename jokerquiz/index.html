@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Joker Trivia!</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/style.css" type="text/css">
+</head>
+<body>
+  <div id="start">
+    <img src="img/cover.png" alt="">
+    <button id="startBtn">Start Quiz!</button>
+  </div>
+  <div id="game">
+    <h2 id="question"></h2>
+    <div>
+      <img id="image" src="" alt="">
+    </div>
+    <div class="answers">
+      <div class="answer redBtn"></div>
+      <div class="answer blueBtn"></div>
+      <div class="answer yellowBtn"></div>
+      <div class="answer greenBtn"></div>
+    </div>
+    <button id="nextBtn">Next question</button>
+  </div>
+  <div id="end">
+    <div>
+      <h2>Results</h2>
+      <p id="results"></p>
+    </div>
+    <button id="endBtn">Repeat Quiz!</button>
+    <div>
+      <h3>Recursos y referencias</h3>
+      <p><a href="https://github.com/thebridge-tech/webdevelopment" target="_blank">The Bridge GitHub</a></p>
+      <p><a href="http://epicstream.com/quizzes/How-Well-Do-You-Know-The-Joker" target="_blank">EpicStream</a></p>
+      <p>Web Dev Simplified<br />
+        <a href="https://www.youtube.com/watch?v=riDzcEQbX6k" target="_blank">YouTube</a><br />
+        <a href="https://codepen.io/WebDevSimplified/pen/xNvaaz" target="_blank">CodePen</a><br />
+        <a href="https://github.com/WebDevSimplified/JavaScript-Quiz-App" target="_blank">GitHub</a><br />
+      </p>
+    </div>
+  </div>
+
+  <script src="js/questions.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
