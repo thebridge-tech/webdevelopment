@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<body>
+  <h1>Firebase Example</h1>
+
+  <div id="userinfo"></div>
+
+  <select id="usuarios"></select>
+  <button onclick="retrieveUser()">Datos del usuario</button>
+
+  <div>
+    <input type="text" id="username">
+    <input type="email" id="useremail">
+
+    <button type="button" onclick="createNewUser()">Entrar</button>
+  </div>
+
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/7.8.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.8.1/firebase-database.js"></script>
+
+  <script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+      apiKey: "AIzaSyDxt5oJ1vdcnkjd3Kd1SY1jtg2pPWn-Q6A",
+      authDomain: "friknder.firebaseapp.com",
+      databaseURL: "https://friknder.firebaseio.com",
+      projectId: "friknder",
+      storageBucket: "friknder.appspot.com",
+      messagingSenderId: "45681630400",
+      appId: "1:45681630400:web:14c29cdeabc937c0406125"
+    };
+
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+  </script>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
